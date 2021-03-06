@@ -1,0 +1,16 @@
+<?php
+function inputElement($icon, $placeHolder, $name, $value)
+{
+    $ele =
+        "<div class=\"input-group flex-nowrap\">
+    <span class=\"input-group-text bg-warning\" id=\"addon-wrapping\">$icon</span>
+    <input type=\"text\" name='$name' value='$value' autocomplete=\"off\" class=\"form-control\" placeholder='$placeHolder' aria-label=\"Username\" aria-describedby=\"addon-wrapping\">
+    </div>";
+    echo $ele;
+}
+
+function buttonElement($name, $btnid, $styleclass, $text, $attr)
+{
+    $btn = "<button name='$name''$attr' class='$styleclass' id='$btnid'>$text</button>";
+    echo $btn;
+}
